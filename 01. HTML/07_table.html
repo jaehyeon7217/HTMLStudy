@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table test</title>
+</head>
+<body>
+    <h1>table test</h1>
+    <table border="1">
+        <caption>table입니다.</caption>
+        <colgroup>
+            <!--첫 번째 열은 배경색-->
+            <col style="background-color: #eee;">
+            <!--두 번째 열은 아무 스타일이 없어도 <col> 해줘야함-->
+            <col>
+            <!--세 번째와 네 번째, 다섯 번째는 너비를 조정-->
+            <col span="3" style="width: 50px;">
+        </colgroup>
+        <tr>
+            <th>구분</th>
+            <th>ㅏ</th>
+            <th>ㅓ</th>
+            <th>ㅗ</th>
+            <th>ㅜ</th>
+        </tr>
+        <tr>
+            <th>ㄱ</th>
+            <td>가</td>
+            <td>거</td>
+            <td>고</td>
+            <td>구</td>
+        </tr>
+        <tr>
+            <th>ㄴ</th>
+            <td>나</td>
+            <td>너</td>
+            <td>노</td>
+            <td>누</td>
+        </tr>
+        <tr>
+            <th>ㄷ</th>
+            <td>다</td>
+            <td>더</td>
+            <td>도</td>
+            <td>두</td>
+        </tr>
+        <tr>
+            <th>ㄹ</th>
+            <td>라</td>
+            <td>러</td>
+            <td>로</td>
+            <td>루</td>
+        </tr>
+    </table>
+
+
+    <h2>상품 목록</h2>
+    <table border="1">
+        <caption>상품 가격표</caption>
+        <thead>
+            <tr>
+                <th>상품명</th>
+                <th>재고</th>
+                <th>상품가격</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>책</td>
+                <td>130</td>
+                <td rowspan="2">10,000</td>
+            </tr>
+            <tr>
+               <!--행이 합쳐졌으므로 맨마지막 가격을 제외한 2개만 입력-->>
+                <td>밀키트</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>양말</td>
+                <td>90</td>
+                <td>3,000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <!--열이 합쳐졌으므로 1개만 작성-->
+                <td colspan="3">단위는 원입니다.</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
